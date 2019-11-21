@@ -1,0 +1,91 @@
+
+*(
+    box-sizing: border-box;
+)
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hotpink;
+}
+.beranda{
+    background-color: hotpink;
+}
+.header{
+    height: 100px;
+    padding:120px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("tenor.gif");
+    border: outset black;
+}
+.navbar{
+    text-align: center;
+    display: flex; 
+    border: outset black;
+    background-color:rgba(245, 9, 245, 0.911);
+}
+
+.navbar a{
+    background-color: rgba(245, 9, 245, 0.911);
+    color: black;
+    padding: 15px 15px;
+    text-decoration:none; 
+    text-align: center;
+}
+.navbar a:hover{
+    padding: 15px 15px;
+    background-color: rgb(248, 251, 255);
+    color: white;
+    background-color: black;
+}
+
+.c{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-image: url('gambar2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 25px 25px 250px;
+    border:outset black;
+    background-color: black;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(245, 9, 245, 0.911);
+    background-image: url("o.jfif");
+}
+
+
+.footer{ 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    
+}
+@media screen and (max-width: 800px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar a{
+        border-bottom: outset black;
+    }
+    .row{
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .c,.row{
+        font-size: 15px;
+        font-style: italic;
+        text-align: center;
+        flex-direction: column;
+        border-top: none;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
